@@ -464,7 +464,7 @@
                     }
                     
                     .wraperbox {
-                        height: 820px;
+                        height: 440px;
                         overflow: scroll;
                     }
                     
@@ -547,7 +547,7 @@
                     
                     .buttonLoc {
                         position: absolute;
-                        top: 45%;
+                        top: 85%;
                         left: 3%;
                     }
                     
@@ -583,6 +583,9 @@
                             margin-top: 12%;
                             width: 90%;
                             margin-left: 5%;
+                        }
+                        .wraperbox{
+                            height: 820px;
                         }
                     }
                     
