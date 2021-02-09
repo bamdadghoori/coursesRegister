@@ -1,0 +1,658 @@
+                    * {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    @font-face {
+                        font-family: Sahel;
+                        src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.eot');
+                        src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.eot?#iefix') format('embedded-opentype'), url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.woff') format('woff'), url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.ttf') format('truetype');
+                        font-weight: normal;
+                    }
+                    
+                    @font-face {
+                        font-family: Sahel;
+                        src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.eot');
+                        src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.eot?#iefix') format('embedded-opentype'), url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.woff') format('woff'), url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.ttf') format('truetype');
+                        font-weight: bold;
+                    }
+                    
+                    @font-face {
+                        font-family: Sahel;
+                        src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.eot');
+                        src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.eot?#iefix') format('embedded-opentype'), url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.woff') format('woff'), url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.ttf') format('truetype');
+                        font-weight: 900;
+                    }
+                    
+                    body {
+                        background-color: #ffe242;
+                        overflow-x: hidden;
+                        max-width: 100%;
+                    }
+                    html{
+                        overflow-x: hidden;
+                        max-width: 100%;
+                    }
+                    .wraperbox {
+                        background-color: whitesmoke;
+                        position: relative;
+                        height: 100vh;
+                        text-align: center;
+                        border-radius: 5px;
+                        height: 600px;
+                        margin-top: 6%;
+                        overflow: scroll;
+                    }
+                    
+                    .profile {
+                        position: absolute;
+                        background-color: white;
+                        height: 100px;
+                        top: 0;
+                        left: 2%;
+                        width: 99%;
+                        /* max-width: fit-content; */
+                        margin-top: 2%;
+                        border-radius: 4px 4px 0px 0px;
+                        text-align: center !important;
+                    }
+                    
+                    @media(max-width:600px) {
+                        .profile {
+                            left: 4%;
+                        }
+                    }
+                    
+                    .profile-name {
+                        position: absolute;
+                        background-color: white;
+                        height: 100px;
+                        top: 0;
+                        left: 2%;
+                        width: 99%;
+                        /* max-width: fit-content; */
+                        margin-top: 12%;
+                        overflow: auto;
+                        border-radius: 4px 4px 0px 0px;
+                    }
+                    
+                    @media(max-width:600px) {
+                        .profile-name {
+                            top: 22vh;
+                            overflow: unset;
+                            height:28vh;
+                            left: 4vw;
+                        }
+                    }
+                    
+                    .textarea {
+                        height: 43px;
+                        border: 1px solid rgb(0, 0, 0, .15);
+                        width: 86vh;
+                        border-radius: 2%;
+                        margin-top: 3%;
+                        float: right;
+                        margin-right: 6%;
+                    }
+                    
+                    @media(max-width:600px) {
+                        .textarea {
+                            margin-bottom: 5%;
+                            width: 88%;
+                            height: 42px;
+                        }
+                    }
+                    
+                    .certificate {
+                        position: absolute;
+                        background-color: white;
+                        height: 100px;
+                        top: 0;
+                        left: 1%;
+                        width: 98%;
+                        max-width: fit-content;
+                        margin-top: 20%;
+                        border-radius: 4px 4px 0px 0px;
+                    }
+                    
+                    .profile2 {
+                        position: absolute;
+                        background-color: white;
+                        height: 100px;
+                        top: 0;
+                        left: 1%;
+                        width: 98%;
+                        max-width: fit-content;
+                        margin-top: 12%;
+                        border-radius: 4px 4px 0px 0px;
+                    }
+                    
+                    .profile3 {
+                        position: absolute;
+                        background-color: white;
+                        height: 100px;
+                        top: 0;
+                        left: 2%;
+                        width: 99%;
+                        /* max-width: fit-content; */
+                        margin-top: 22%;
+                        border-radius: 4px 4px 0px 0px;
+                    }
+                    
+                    .tableloc {
+                        position: absolute;
+                        margin-top: 29%;
+                        width: 96%;
+                        font-family: sahel;
+                        text-align: right;
+                        margin-left: 2%;
+                    }
+                    
+                    .bgtr {
+                        background-color: whitesmoke;
+                        border: 2px solid #ffe242;
+                    }
+                    
+                    .add {
+                        position: absolute;
+                        margin-top: 3%;
+                        font-size: 36px;
+                        right: 95%;
+                        background-color: #ffe242;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                    
+                    .add2 {
+                        position: absolute;
+                        margin-top: 3%;
+                        font-size: 36px;
+                        right: 95%;
+                        background-color: #ffe242;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                    
+                    .add3 {
+                        position: absolute;
+                        margin-top: 3%;
+                        font-size: 36px;
+                        right: 95%;
+                        background-color: #ffe242;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                    
+                    .table thead th {
+                        text-align: center !important;
+                        font-family: sahel;
+                    }
+                    
+                    .ProfileImage {
+                        border-radius: 50%;
+                        width: 94px;
+                        float: right;
+                        margin-right: 2%;
+                        cursor: pointer;
+                    }
+                    
+                    .textprofile {
+                        font-size: 19px;
+                        float: right;
+                        margin-right: -2%;
+                        margin-top: 4%;
+                        color: black;
+                        font-family: sahel;
+                    }
+                    
+                    .uploadimage {
+                        font-size: 19px;
+                        float: right;
+                        margin-right: 11%;
+                        margin-top: 4%;
+                        color: black;
+                        font-family: sahel;
+                    }
+                    
+                    .dateprofile {
+                        font-size: 22px;
+                        float: right;
+                        margin-top: 1%;
+                        color: teal;
+                        font-family: sahel;
+                    }
+                    
+                    .inputtext {
+                        border-radius: 4px;
+                        direction: rtl;
+                        padding-right: 3%;
+                        font-size: 20px;
+                        border: 1px solid rgb(199, 196, 196);
+                    }
+                    
+                    .inputfile {
+                        direction: rtl;
+                        float: right;
+                        margin-right: 6%;
+                        margin-top: 6%;
+                        font-size: 20px;
+                        background-color: #ffe242;
+                    }
+                    
+                    .profilecontent {
+                        position: absolute;
+                        background-color: whitesmoke;
+                        height: 450px;
+                        top: 0;
+                        left: 1%;
+                        width: 98%;
+                        max-width: fit-content;
+                        margin-top: 11%;
+                        border-radius: 0px 0px 4px 4px;
+                    }
+                    
+                    .wb {
+                        margin-left: -130%;
+                        margin-top: 3%;
+                    }
+                    
+                    .wb2 {
+                        width: 200px;
+                        margin-left: 3%;
+                        margin-top: 3%;
+                    }
+                    
+                    .wb3 {
+                        margin-left: 0%;
+                        margin-top: 14%;
+                    }
+                    
+                    .wb4 {
+                        width: 200px;
+                        margin-top: 3%;
+                    }
+                    
+                    .codeteacher {
+                        width: 200px;
+                        margin-top: 5%;
+                    }
+                    
+                    .imgcontent {
+                        border-radius: 4px;
+                        width: 400px;
+                        float: right;
+                        margin-right: 2%;
+                        margin-top: 8%;
+                        border: 1px solid white;
+                    }
+                    
+                    .textprofilecontent {
+                        text-align: justify;
+                        width: 50%;
+                        margin-top: 10%;
+                        margin-left: 6%;
+                        direction: rtl;
+                        font-family: sahel;
+                    }
+                    
+                    .title {
+                        font-size: 30px;
+                        color: black;
+                    }
+                    
+                    .mapimg {
+                        width: 35%;
+                        border: 2px solid white;
+                        border-radius: 4px;
+                    }
+                    
+                    .peymenttext {
+                        text-align: justify;
+                        width: 50%;
+                        margin-top: 10%;
+                        margin-left: 6%;
+                        direction: rtl;
+                        font-family: sahel;
+                    }
+                    
+                    .titlepeyment {
+                        font-size: 22px;
+                        color: seagreen;
+                        margin-right: 5%;
+                        margin-top: 2%;
+                        float: right;
+                    }
+                    
+                    .price {
+                        position: absolute;
+                        color: blueviolet;
+                        margin-top: 6%;
+                        margin-left: 24%;
+                        direction: rtl;
+                        font-size: 15px;
+                    }
+                    
+                    .map {
+                        text-align: justify;
+                        float: right;
+                        direction: rtl;
+                        font-family: sahel;
+                        margin-right: 8%;
+                        margin-top: 0%;
+                    }
+                    
+                    .titlemark {
+                        font-size: 22px;
+                        color: seagreen;
+                        margin-right: -5%;
+                        margin-top: 0%;
+                        float: right;
+                        position: absolute;
+                    }
+                    
+                    .iconmark {
+                        position: absolute;
+                        color: blueviolet;
+                        float: right;
+                        margin-top: 1%;
+                        direction: rtl;
+                        font-size: 16px;
+                    }
+                    
+                    .getcoursesbutton {
+                        background-color: #ffe242;
+                        border-radius: 4px;
+                        border: 2px solid white;
+                        cursor: pointer !important;
+                        text-align: center;
+                        color: black;
+                        font-family: sahel;
+                        padding: 7px;
+                        margin-right: 13%;
+                        margin-top: 3%;
+                    }
+                    
+                    .getcoursesbutton:hover {
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+                    
+                    .navs {
+                        top: 9%;
+                        position: sticky;
+                        z-index: 0;
+                        direction: rtl;
+                    }
+                    /*Responsive */
+                    /*Responsive */
+                    /*Responsive */
+                    span{
+                        color:gray;
+                    }
+                    .AddressLabel{
+                        position: relative;
+                        left:-7vw;
+                    }
+                    @media (max-width:760px) {
+                        .textprofile {
+                            font-size: 16px;
+                            margin-right: 5%;
+                            margin-top: 6%;
+                        }
+                        .uploadimage {
+                            font-size: 16px;
+                            margin-right: 28%;
+                            margin-top: 6%;
+                        }
+                        .profile {
+                            height: 27vh;
+                        }
+                        .profile2 {
+                            top: 6%;
+                        }
+                        .profile3 {
+                            top: 45vh;
+                            height: 18vh;
+                            left: 4vw;
+                        }
+                        .ProfileImage {
+                            width: 35px;
+                        }
+                        .tableloc {
+                            width: 92%;
+                            margin-top: 550px;
+                            position: relative;
+                            margin-left: 4%;
+                        }
+                        .AddressLabel{
+                            left: 30vw;
+                        }
+                    }
+                    .form-inline{
+                        width: 100%;
+                    
+                    }
+                    .add {
+                        right: 90%;
+                        margin-top: 5%;
+                    }
+                    
+                    .add2 {
+                        right: 90%;
+                        margin-top: 7%;
+                    }
+                    
+                    .add3 {
+                        right: 90%;
+                        margin-top: 8%;
+                    }
+                    
+                    .profilecontent {
+                        top: 18px;
+                        height: 728px;
+                    }
+                    
+                    .imgcontent {
+                        margin-right: 0;
+                        margin-top: 2%;
+                    }
+                    
+                    .textprofilecontent {
+                        width: 96%;
+                        margin-top: 76%;
+                        margin-left: 2%;
+                    }
+                    
+                    .wraperbox {
+                        height: 820px;
+                        overflow: scroll;
+                    }
+                    
+                    .titlepeyment {
+                        margin-top: 10%;
+                    }
+                    
+                    .price {
+                        margin-top: 22%;
+                        padding-left: 12%;
+                    }
+                    
+                    .titlemark {
+                        margin-top: 8%;
+                    }
+                    
+                    .iconmark {
+                        margin-top: 20%;
+                    }
+                    
+                    .getcoursesbutton {
+                        margin-top: 26%;
+                    }
+                    
+                    .mapimg {
+                        margin-top: 26%;
+                        width: 50%;
+                        margin-right: -85%;
+                    }
+                    
+                    .wb {
+                        margin-top: -39%;
+                        float: left;
+                        width: 133px;
+                    }
+                    
+                    .wb2 {
+                        margin-top: -17%;
+                        width: 133px;
+                        float: right;
+                    }
+                    
+                    .wb3 {
+                        margin-top: 10% !important;
+                        width: 133px;
+                    }
+                    
+                    .wb4 {
+                        margin-top: 4%;
+                        float: right;
+                        width: 133px;
+                    }
+                    
+                    .codeteacher {
+                        float: right;
+                        margin-top: 22%;
+                        width: 133px;
+                    }
+                    
+                    .inputfile {
+                        width: 61%;
+                        margin-right: 28%;
+                    }
+                    
+                    .addAll {
+                        background-color: whitesmoke;
+                        background-color: #ffe242;
+                        border: none;
+                        text-align: center;
+                        font-family: sahel;
+                        width: 100px;
+                        height: 32px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                    
+                    .addAll:hover {
+                        opacity: 0.8;
+                    }
+                    
+                    .buttonLoc {
+                        position: absolute;
+                        top: 45%;
+                        left: 3%;
+                    }
+                    
+                    @media(max-width:600px) {
+                        .buttonLoc {
+                            position: absolute;
+                            top: 78vh;
+                            left: 65%;
+                        }
+                    }
+                    
+                    .www {
+                        display: flex;
+                        justify-content: center;
+                        text-align: center !important;
+                        margin-top: 1%;
+                    }
+                    
+                    .www2 {
+                        margin: auto;
+                        margin-top: 3%;
+                    }
+                    
+                    @media(max-width:600px) {
+                        .form-inline {
+                            display: unset !important;
+                        }
+                        .www {
+                            display: unset;
+                            margin-top: 8%;
+                        }
+                        .www2 {
+                            margin-top: 12%;
+                            width: 90%;
+                            margin-left: 5%;
+                        }
+                    }
+                    
+                    .textarealoc {
+                        margin-top: 3% !important;
+                    }
+                    
+                    td {
+                        text-align: center !important;
+                    }
+                    
+                    tr {
+                        text-align: center !important;
+                    }
+                    
+                    .searchinput {
+                        width: 100%;
+                        text-align: right;
+                        padding: 4px;
+                        height: 30px;
+                    }
+                    /* table */
+                    
+                    .list-inline-item:not(:last-child) {
+                        margin-right: unset !important;
+                    }
+                    
+                    .edit {
+                        width: 32px;
+                    }
+                    
+                    .design {
+                        font-family: sahel;
+                        width: 200px !important;
+                        height: 35px !important;
+                        color: gray;
+                        appearance: none;
+                    }
+                    
+                    .sahel {
+                        font-family: sahel;
+                    }
+                    
+                    @media(max-width:600px) {
+                        .design {
+                            width: 100% !important;
+                        }
+                    }
+                    
+                    .table-sortable th {
+                        cursor: pointer;
+                        background: url(../images/sort-svgrepo-com\ \(1\).svg);
+                        background-repeat: no-repeat;
+                        background-size: 20px;
+                        background-position: right center;
+                        /* background-size: cover; */
+                    }
+                    
+                    .table-sortable .th-sort-asc ::after {
+                        content: "\25b4";
+                    }
+                    
+                    .table-sortable .th-sort-asc ::after {
+                        content: "\25be";
+                    }
+                    
+                    .table-sortable .th-sort-asc ::after,
+                    .table-sortable .th-sort-asc ::after {
+                        margin-left: 5px;
+                    }
+                    
+                    .table-sortable .th-sort-asc,
+                    .table-sortable .th-sort-desc {}
